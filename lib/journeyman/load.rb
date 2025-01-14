@@ -31,7 +31,7 @@ module Journeyman
 
     # Internal: If the path matches a file, it loads the factories defined in it.
     def load_factories_if_file(path)
-      Kernel.load("#{path}.rb") if File.exists?("#{path}.rb")
+      Kernel.load("#{path}.rb") if File.exist?("#{path}.rb")
     end
 
     # Internal: If the path is a directory, it loads all the factories in that path.
